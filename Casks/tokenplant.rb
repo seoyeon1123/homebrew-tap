@@ -8,7 +8,7 @@ cask "tokenplant" do
   desc "Menu bar app that grows a plant from AI coding token usage"
   homepage "https://github.com/seoyeon1123/tokenplant"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "TokenPlant.app"
 
