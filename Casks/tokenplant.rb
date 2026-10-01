@@ -1,7 +1,7 @@
 cask "tokenplant" do
-  version "0.2.3"
+  version "0.2.4"
   # 버전을 올릴 때마다 `shasum -a 256 dist/TokenPlant-<버전>.zip` 값으로 갱신한다.
-  sha256 "519d142a15040146d994d1d273ce7e86a5fff2d196644bec93aa1dc3d67928ff"
+  sha256 "65db111ff4c9b449b5859cf57287487ba34c899303c8b9c4b4bd39ebabceebcb"
 
   url "https://github.com/seoyeon1123/tokenplant/releases/download/v#{version}/TokenPlant-#{version}.zip"
   name "TokenPlant"
@@ -9,6 +9,10 @@ cask "tokenplant" do
   homepage "https://github.com/seoyeon1123/tokenplant"
 
   depends_on macos: :sonoma
+
+  # 앱이 Sparkle 로 스스로 갱신한다. 이 줄이 없으면 brew 와 Sparkle 이 같은 앱을
+  # 서로 관리해서, brew 가 "구버전이 깔려 있다"며 매번 다시 덮어쓴다.
+  auto_updates true
 
   app "TokenPlant.app"
 
