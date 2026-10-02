@@ -1,7 +1,7 @@
 cask "tokenplant" do
   version "0.2.5"
   # 버전을 올릴 때마다 `shasum -a 256 dist/TokenPlant-<버전>.zip` 값으로 갱신한다.
-  sha256 "56a4cae482b28d724c1dff9f7f5a8723f0f2107c650576b6e2cee974d0e33be9"
+  sha256 "d3c69ffb49c1371992ac8658aaec22259af43b984fc125400d5cbcf1e3b67c4d"
 
   url "https://github.com/seoyeon1123/tokenplant/releases/download/v#{version}/TokenPlant-#{version}.zip"
   name "TokenPlant"
